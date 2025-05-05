@@ -18,6 +18,8 @@ body {
     align-items: center;
     font-size: 25px;
     padding-top: 80px;  /* Ajuste para o cabeçalho não sobrepor o conteúdo */
+    overflow-x: auto; 
+    white-space: nowrap; 
 }
 
 /* Header */
