@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safenet</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho do site -->
+    <header>
+        <div class="logo-container">
+            <img src="SafeNet1.PNG" alt="Logo do Site" class="logo">
+            <div class="title">Safenet</div>
+            <div class="logo-container">
+                <img id="flag-button" src="bandeira-ingles.png" alt="English" class="flag-button">
+            </div>    
+        </div>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    
+                    <li><a href="como-proteger.html" id="menu-proteger">Como Podes Proteger-te Online</li>    
+                    <li><a href="nao-fazer.html" id="menu-nao-fazer">O que não fazer Online</a></li>
+                    <li><a href="noticias-famosas.html" id="noticias-famosas"> Invasões Digitais: Os Ataques Informáticos Mais Impactantes</a></li>
+                    <li><a href="#" id="quizzes-btn">Quizzes</a></li>
+                    <li><a href="sobre-nos.html" id="sobre-nos">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <div class="container">
+            <h1 id="welcome" data-lang="welcome">Bem-vindo à Safenet!</h1>
+            <h2 id="slogan">A sua prioridade devia ser sempre a sua segurança.</h2>
+        </div>
+    </main>
+
+<div class="quiz-container">
+    <h1>Quiz de Cibersegurança</h1>
+    <p>Testa os teus conhecimentos sobre proteção online!</p>
+    <div id="quiz">
+        <p id="question">Carregando pergunta...</p>
+        <div id="answers"></div>
+        <button id="next-btn">Próxima Pergunta</button>
+        <button id="restart-btn">Reiniciar Quiz</button>
+    </div>
+    <p id="result"></p>
+</div>
+
+<script src="script.js"></script>

@@ -1,0 +1,156 @@
+/* Fundo e estilo geral */
+body {
+    background-color: #8e44ad; /* Roxo vibrante */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+/* Estilo do botão Home */
+.home-btn {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 12px 40px;
+    background: linear-gradient(45deg, #8e44ad, #ff8c00); /* Roxo + Laranja */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(142, 68, 173, 0.8); /* Brilho roxo */
+    transition: 0.4s ease-in-out;
+    position: relative;
+    animation: pulsar 1.5s infinite alternate;
+}
+
+/* Efeito de hover e clique */
+.home-btn:hover {
+    background: linear-gradient(45deg, #ff8c00, #8e44ad); /* Inverte as cores no hover */
+    box-shadow: 0 0 15px rgba(142, 68, 173, 1);
+    transform: scale(1.1);
+}
+
+/* Animação de brilho */
+@keyframes pulsar {
+    0% {
+        box-shadow: 0 0 10px rgba(142, 68, 173, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(142, 68, 173, 1);
+    }
+}
+
+
+/* Estilo da seção */
+#protecao-online {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #333;
+    text-align: left;
+}
+
+/* Títulos e parágrafos */
+h1 {
+    font-size: 2.5rem;
+    color: #8e44ad;
+    text-align: center;
+}
+
+p {
+        color: #2c3e50; /* Rosa vibrante para o texto */
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+        background-color: #f8e1f4; /* Lilás suave para o fundo */
+        padding: 15px;
+        border-left: 5px solid#8e44ad; /* Magenta forte para a borda */
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(113, 33, 84, 0.2); /* Sombra suave em tom de magenta */
+        max-width: 800px;
+        margin: 20px auto;
+    }
+    
+
+
+/* Lista estilizada */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1.2rem;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .home-btn {
+        font-size: 1.2rem;
+        padding: 10px 30px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p, li {
+        font-size: 1rem;
+    }
+}
+.video-container {
+    text-align: center;
+    margin-top: 20px;
+    animation: pulsar 1.5s infinite alternate; /* Animação de brilho */
+}
+
+.video-container img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.video-container img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.video-creditos {
+    font-size: 0.9rem;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.video-creditos a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.video-creditos a:hover {
+    text-decoration: underline;
+}
+.flag-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.flag-button:hover {
+    transform: scale(1.1);
+}
+
+

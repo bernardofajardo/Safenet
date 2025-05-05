@@ -1,0 +1,131 @@
+body {
+    background-color: #8e44ad; /* Roxo vibrante */
+    text-shadow: 0px 0px 10px rgba(215, 48, 218, 0.8);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+/* Estilo do botão Home */
+.home-btn {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 12px 40px;
+    background: linear-gradient(45deg, #8e44ad, #ff8c00); /* Roxo + Laranja */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(142, 68, 173, 0.8); /* Brilho roxo */
+    transition: 0.4s ease-in-out;
+    position: relative;
+    animation: pulsar 1.5s infinite alternate;
+}
+
+/* Efeito de hover e clique */
+.home-btn:hover {
+    background: linear-gradient(45deg, #ff8c00, #8e44ad); /* Inverte as cores no hover */
+    box-shadow: 0 0 15px rgba(142, 68, 173, 1);
+    transform: scale(1.1);
+}
+
+/* Botão da bandeira (alterar idioma) */
+.flag-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.flag-button:hover {
+    transform: scale(1.1);
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    justify-content: space-between; /* Texto à esquerda, logo à direita */
+    align-items: center; /* Centraliza verticalmente */
+    flex-wrap: wrap; /* Evita que o texto e a imagem fiquem espremidos */
+    background: linear-gradient(135deg, #8a2be2, #ff00ff);
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: justify;
+    margin: 0 auto; /* Centraliza o container na tela */
+}
+
+/* Ajuste para o texto */
+.text-content {
+    flex: 1; /* O texto ocupa o espaço disponível */
+}
+
+/* Ajuste para o logo */
+.logo {
+    max-width: 200px; /* Tamanho ajustável */
+    height: auto;
+    margin-left: 20px; /* Espaço entre o texto e o logo */
+}
+
+/* Créditos */
+.creditos {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: justify;
+}
+
+/* Títulos */
+h1, h2 {
+    text-align: center;
+    color: #fff;
+}
+
+/* Parágrafos */
+p {
+    line-height: 1.8;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* Lista */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Empilha os elementos em telas pequenas */
+        text-align: center;
+    }
+
+    .logo {
+        margin: 20px 0 0 0; /* Espaçamento acima do logo */
+    }
+}

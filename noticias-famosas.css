@@ -1,0 +1,144 @@
+/* Fundo e estilo geral */
+body {
+    background-color: #8e44ad; /* Roxo vibrante */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+/* Estilo do botão Home */
+.home-btn {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 12px 40px;
+    background: linear-gradient(45deg, #8e44ad, #ff8c00); /* Roxo + Laranja */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(142, 68, 173, 0.8); /* Brilho roxo */
+    transition: 0.4s ease-in-out;
+    position: relative;
+    animation: pulsar 1.5s infinite alternate;
+}
+
+/* Efeito de hover e clique */
+.home-btn:hover {
+    background: linear-gradient(45deg, #ff8c00, #8e44ad); /* Inverte as cores no hover */
+    box-shadow: 0 0 15px rgba(142, 68, 173, 1);
+    transform: scale(1.1);
+}
+
+/* Estilo das seções */
+section {
+    background-color: #fff; /*  Define a cor de fundo da seção como branco */   
+    max-width: 800px; /* Limita a largura máxima da seção a 800 pixels. */ 
+    margin: 30px auto; /* Aplica uma margem de 30 pixels */
+    padding: 30px; /* Adiciona 30 pixels de preenchimento (espaço interno) em todos os lados da seção */
+    border-radius: 10px; /* Aplica bordas arredondadas à seção com um raio de 10 pixels. */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /*Cria uma sombra na seção.*/
+    color: #333; /* Define a cor do texto dentro da seção */
+    text-align: left; /* Alinha o Texto á Esquerda */
+}
+
+/* Títulos */
+h1 {
+    font-size: 2.5rem;
+    color: #000000;
+    text-shadow: 0px 0px 10px rgba(215, 48, 218, 0.8);
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #130909;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Parágrafos */
+section p {
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* Estilo da imagem da bandeira */
+.flag-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.flag-button:hover {
+    transform: scale(1.1);
+}
+/* Estilo da imagem da notícia */
+.news-image {
+    display: block; /* Faz a imagem ser um bloco */
+    margin-left: auto; /* Alinha a margem esquerda automaticamente */
+    margin-right: auto; /* Alinha a margem direita automaticamente */
+    width: 80%; /* Ajusta a largura para 80% da largura da seção */
+    max-width: 700px; /* Limita a largura máxima */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efeito de hover na imagem */
+.news-image:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo do vídeo da notícia */
+.video-container {
+    display: block; /* Faz o vídeo ser um bloco */
+    margin-left: auto; /* Alinha a margem esquerda automaticamente */
+    margin-right: auto; /* Alinha a margem direita automaticamente */
+    width: 80%; /* Ajusta a largura para 80% da largura da seção */
+    max-width: 700px; /* Limita a largura máxima */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efeito de hover no vídeo */
+.video-container:hover {
+    transform: scale(1.05);
+}
+
+/* Créditos do vídeo */
+.video-creditos {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+.video-creditos a {
+    color: #8e44ad;
+    text-decoration: none;
+}
+
+.video-creditos a:hover {
+    text-decoration: underline;
+}
+
+/* Animação de brilho */
+@keyframes pulsar {
+    0% {
+        box-shadow: 0 0 10px rgba(142, 68, 173, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(142, 68, 173, 1);
+    }
+}
