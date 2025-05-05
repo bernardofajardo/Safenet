@@ -182,12 +182,16 @@ button:hover {
 }
 /* Responsividade */
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Empilha os elementos em telas pequenas */
-        text-align: center;
+    .home-btn {
+        font-size: 1.2rem;
+        padding: 10px 30px;
     }
 
-    .logo {
-        margin: 20px 0 0 0; /* Espaçamento acima do logo */
+    h1 {
+        font-size: 2rem;
+    }
+
+    p, li {
+        font-size: 1rem;
     }
 }
