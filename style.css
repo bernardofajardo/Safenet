@@ -180,18 +180,62 @@ button:hover {
 .wrong {
     background-color: #ff5555 !important;
 }
-/* Responsividade */
+@media (max-width: 1024px) {
+    .quiz-container {
+        width: 80%;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
+
 @media (max-width: 768px) {
-    .home-btn {
-        font-size: 1.2rem;
-        padding: 10px 30px;
+    body {
+        font-size: 18px;
+        flex-direction: column;
+        padding-top: 100px;
     }
 
-    h1 {
-        font-size: 2rem;
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
     }
 
-    p, li {
-        font-size: 1rem;
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .quiz-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .form-box h2 {
+        font-size: 24px;
+    }
+
+    .btn, .answer, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .title {
+        font-size: 18px;
+        text-align: center;
     }
 }
